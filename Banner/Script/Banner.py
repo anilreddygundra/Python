@@ -1,5 +1,5 @@
 __version__ = "2023.04.01.01"
-__author__ = "Muthukumar Subramanian"
+__author__ = "Anil Kumar Reddy"
 
 '''
 Python Banner Utility, the Banner text will display with Foreground(text) and Background colours.
@@ -13,7 +13,7 @@ import random
 
 
 # Define banner text
-banner_text = "Muthukumar S"
+banner_text = "Anil     Reddy"
 
 # Get all fonts
 get_all_fonts = pyfiglet.FigletFont.getFonts()
