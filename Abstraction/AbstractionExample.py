@@ -1,7 +1,4 @@
-__version__ = "2019.10.29.01"
-__author__ = "Anil Kumar Reddy"
-
-# import abc   # for Python lessthan 3.4
+# import abc   
 from abc import ABC, abstractmethod
 # class MyOwnAbstractClass(metaclass=abc.ABCMeta):
 
