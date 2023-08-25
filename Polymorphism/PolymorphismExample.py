@@ -1,7 +1,3 @@
-
-__version__ = "2019.11.11.01"
-__author__ = "Anil Kumar Reddy"
-
 # Example-1
 # Examples of used defined polymorphic functions
 
