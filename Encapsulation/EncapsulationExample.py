@@ -1,7 +1,3 @@
-
-__version__ = "2019.11.08.01"
-__author__ = "Anil Kumar Reddy"
-
 # Add "__" (double underscore ) in front of the variable and function name can hide them
 # when accessing them from out of class.
 
