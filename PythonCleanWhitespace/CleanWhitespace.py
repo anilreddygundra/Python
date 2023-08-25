@@ -2,10 +2,6 @@ import re
 from collections import OrderedDict
 
 
-__version__ = "2019.09.17.01"
-__author__ = 'Anil Kumar Reddy'
-
-
 class CleanWhitespace(object):
     def __init__(input_dictionary):
         pass
@@ -41,20 +37,20 @@ class CleanWhitespace(object):
             Example 1:
                 Dict input:
                     abc = {' E123      yuyu' : ' QWEerer' , ' Qwerty   22' : ' 89RThhjj ',
-                     'DDf     ' : { ' MuthUkU      fdf ' : 'asdfgFG2 '}}
+                     'DDf     ' : { ' Anil      fdf ' : 'asdfgFG2 '}}
                 ret = clean_whitespace(abc, key_strip = 'lead_and_trail', value_strip='all')
                 Return output:
                     ret =  {'E123      yuyu': 'qweerer', 'Qwerty   22': '89rthhjj',
-                            'DDf': {'MuthUkU      fdf': 'asdfgfg2'}}
+                            'DDf': {'Anil      fdf': 'asdfgfg2'}}
              Example 2: (dict values spaces remove)
                 Dict input:
                     abc = {' E123      yuyu' : ' QWEerer' , ' Qwerty   22' : ' 89RThhjj ',
-                         'DDf     ' : { ' MuthUkU      fdf ' : 'asdfgFG2 '}}
+                         'DDf     ' : { ' Anil      fdf ' : 'asdfgFG2 '}}
                 ret = clean_whitespace(abc, value_strip='lead_and_trail')
                 Return output:
                     ret = {   ' E123      yuyu': 'QWEerer',
                         ' Qwerty   22': '89RThhjj',
-                        'DDf     ': {' MuthUkU      fdf ': 'asdfgFG2'}}
+                        'DDf     ': {' Anil      fdf ': 'asdfgFG2'}}
              Example 3:
                 Dict input:
                     abc = {1: 2, 3: [4, {5: 6}, 7]}
