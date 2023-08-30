@@ -1,9 +1,5 @@
 # Example for import two classes
 
-__version__ = "2019.09.24.01"
-__author__ = 'Anil Kumar Reddy'
-
-
 class anil():
     def __init__(self):
         print("self: ", self)

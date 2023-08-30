@@ -7,7 +7,7 @@ class RandomIpaddress():
         self.previous_ip = existing_ip
 
     def random_ip(self, ip_type=None):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
             Required argument(s):
@@ -18,7 +18,7 @@ class RandomIpaddress():
             Optional argument(s):
                 None
         :return: return_dict
-        '''
+        """
         return_dict = {}
         if isinstance(ip_type, int):
             ip_type = str(ip_type)

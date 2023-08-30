@@ -2,10 +2,6 @@ import re
 from collections import OrderedDict
 
 
-__version__ = "2019.09.17.01"
-__author__ = 'Anil Kumar Reddy'
-
-
 class CleanWhitespace(object):
     def __init__(input_dictionary):
         pass
@@ -41,20 +37,20 @@ class CleanWhitespace(object):
             Example 1:
                 Dict input:
                     abc = {' E123      yuyu' : ' QWEerer' , ' Qwerty   22' : ' 89RThhjj ',
-                     'DDf     ' : { ' MuthUkU      fdf ' : 'asdfgFG2 '}}
+                     'DDf     ' : { ' Anil      fdf ' : 'asdfgFG2 '}}
                 ret = clean_whitespace(abc, key_strip = 'lead_and_trail', value_strip='all')
                 Return output:
                     ret =  {'E123      yuyu': 'qweerer', 'Qwerty   22': '89rthhjj',
-                            'DDf': {'MuthUkU      fdf': 'asdfgfg2'}}
+                            'DDf': {'Anil      fdf': 'asdfgfg2'}}
              Example 2: (dict values spaces remove)
                 Dict input:
                     abc = {' E123      yuyu' : ' QWEerer' , ' Qwerty   22' : ' 89RThhjj ',
-                         'DDf     ' : { ' MuthUkU      fdf ' : 'asdfgFG2 '}}
+                         'DDf     ' : { 'Anil      fdf ' : 'asdfgFG2 '}}
                 ret = clean_whitespace(abc, value_strip='lead_and_trail')
                 Return output:
                     ret = {   ' E123      yuyu': 'QWEerer',
                         ' Qwerty   22': '89RThhjj',
-                        'DDf     ': {' MuthUkU      fdf ': 'asdfgFG2'}}
+                        'DDf     ': {' Anil      fdf ': 'asdfgFG2'}}
              Example 3:
                 Dict input:
                     abc = {1: 2, 3: [4, {5: 6}, 7]}
@@ -103,11 +99,11 @@ class CleanWhitespace(object):
 
     @staticmethod
     def whitespaces_remove_and_lowercase_convert_for_key(get_input, key_strip=None):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
           Removing leading and trailing spaces or much_spaces or lower case or
           upper case from the dictionary of each key(dict key)
-        '''
+        """
         if isinstance(get_input, str):
             if key_strip == 'all':
                 get_input = re.sub(r'^\s+|\s+$', '', get_input)
@@ -140,11 +136,11 @@ class CleanWhitespace(object):
 
     @staticmethod
     def whitespaces_remove_and_lowercase_convert(get_input, value_strip=None):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
           Removing leading and trailing spaces or much_spaces or lower case or
           upper case from the dictionary of each value(dict value)
-        '''
+        """
 
         if isinstance(get_input, str):
             if value_strip == 'all':

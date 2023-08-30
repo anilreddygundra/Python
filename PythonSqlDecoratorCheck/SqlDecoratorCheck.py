@@ -1,8 +1,5 @@
 import pyodbc
 
-__version__ = "2019.09.30.01"
-__author__ = "Anil Kumar Reddy"
-
 
 class SqlDecoratorCheck(object):
     class SqlConnectionDecorator(object):
@@ -33,7 +30,7 @@ class SqlDecoratorCheck(object):
         self.cursor_obj = None
 
     @SqlConnectionDecorator.SqlObjCreate
-    def muthu(self, *args, **kwargs):
+    def anil(self, *args, **kwargs):
         '''
         ..codeauthor:: Anil Kumar Reddy
         Usage:
@@ -43,14 +40,13 @@ class SqlDecoratorCheck(object):
                 None
         :return: Boolean
         '''
-        self.log_obj = "overwrite in method muthu"
-        print("hi i am from muthu method {}".format(self.cursor_obj))
+        self.log_obj = "overwrite in method anil"
+        print("hi i am from anil method {}".format(self.cursor_obj))
         return True
 
     @SqlConnectionDecorator.SqlObjCreate
     def Create_new_table(self, *args, **kwargs):
         '''
-        ..codeauthor:: Anil Kumar Reddy
         Create new table for new user admin/user, as now it is disabled
         Usage:
             Required argument(s):
@@ -68,5 +64,5 @@ class SqlDecoratorCheck(object):
 
 if __name__ == '__main__':
     obj = SqlDecoratorCheck()
-    obj.muthu()
+    obj.anil()
     obj.Create_new_table()

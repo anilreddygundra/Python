@@ -1,7 +1,5 @@
 from CleanWhitespace import CleanWhitespace
 
-__version__ = "2019.09.17.01"
-__author__ = 'Anil Kumar Reddy'
 
 input_dict = {' E123      yuyu': ' QWEerer', ' Qwerty   22': ' 89RThhjj ',
               'DDf     ': {' AnIlReDdY      fdf ': 'asdfgFG2 '}}

@@ -3,7 +3,7 @@ import pyodbc
 
 def SqlObjCreate(func):
     def wrapped(class_obj, *args, **kwargs):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
             Required argument(s):
@@ -16,7 +16,7 @@ def SqlObjCreate(func):
                          Example: <function SqlDecoratorSkipCheck.test at 0x0000023BA70B60D0>
             Optional argument(s):
                 None
-        '''
+        """
         if class_obj.cursor_obj is None:
             # we can do any operation here before actual execution
             print("From decorator function".format())
@@ -68,10 +68,9 @@ class OptionalDecoratorManage(object):
 
 
 class SqlDecoratorSkipCheck(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
+    """
     Actual execution class
-    '''
+    """
 
     def __init__(self, *args, **kwargs):
         self.fail = "FAIL"

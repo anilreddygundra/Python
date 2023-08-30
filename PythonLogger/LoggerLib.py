@@ -12,7 +12,7 @@ class LoggerLib(object):
         pass
 
     def Logger(self, file_name):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
             Required argument(s):
@@ -20,7 +20,7 @@ class LoggerLib(object):
             Optional argument(s):
                 None
         :return:
-        '''
+        """
         formatter = logging.Formatter(fmt='%(asctime)s %(module)s,line: %(lineno)d %(levelname)8s | %(message)s',
                                       datefmt='%Y/%m/%d %H:%M:%S')  # %I:%M:%S %p AM|PM format
         # we can use .txt or .log file extension

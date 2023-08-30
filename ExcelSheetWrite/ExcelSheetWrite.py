@@ -3,16 +3,13 @@ import xlsxwriter
 from time import localtime, strftime
 import re
 
-__version__ = "2019.12.01.01"
-__author__ = "Anil Kumar Reddy"
-
 
 class ExcelSheetWrite(object):
     def __init__(self):
         pass
 
     def excel_sheet_write_func(self, file_dir, input_dict, headers_1, sub_header_1, sub_header_2):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Excel sheet will form used by dictionary input
         Usage:
@@ -25,7 +22,7 @@ class ExcelSheetWrite(object):
             Optional argument(s):
                 None
         :return: None
-        '''
+        """
         current_time = strftime("%H_%M_%S", localtime())
         get_current_date = strftime("%d_%m_%Y", localtime())
         date_and_time = get_current_date + '_' + current_time
@@ -185,12 +182,12 @@ if __name__ == '__main__':
     #                'id_22', 'Williamson', '22', 'http://w',
     #                'id_23', 'Xavier', '23', 'http://x']
 
-    sheet_dict = {'karthi': {'action_2': tuple_data1, 'action_1': tuple_data2},
+    sheet_dict = {'reddy': {'action_2': tuple_data1, 'action_1': tuple_data2},
                   'kumar': {'action_1': tuple_data3, 'action_2': tuple_data4},
-                  'muthu': {'action_1': tuple_data5, 'action_2': tuple_data6},
+                  'anil': {'action_1': tuple_data5, 'action_2': tuple_data6},
                   }
     header1_list = ['header_column_1', 'header_column_2', 'header_column_3', 'header_column_4']
-    header2_list = ['muthu', 'karthi', 'kumar']
+    header2_list = ['anil', 'reddy', 'kumar']
     header3_list = ['action_1', 'action_2']
 
     cls_obj = ExcelSheetWrite()

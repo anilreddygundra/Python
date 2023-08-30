@@ -1,0 +1,9 @@
+2023/08/30 16:33:51 LoggerLib,line: 39     INFO | Logger object is created successfully..
+2023/08/30 16:33:51 LoggerCall,line: 12     INFO | I am from loggercall class
+2023/08/30 16:33:51 LoggerCall,line: 13 CRITICAL | CRIC
+2023/08/30 16:33:51 LoggerCall,line: 14    ERROR | ERR
+2023/08/30 16:33:51 LoggerCall,line: 15  WARNING | WARN
+2023/08/30 16:33:51 LoggerCall,line: 16    DEBUG | debug
+2023/08/30 16:33:51 LoggerCall,line: 17     INFO | qwerty
+2023/08/30 16:33:51 LoggerCall,line: 18     INFO | asdfghjkl
+2023/08/30 16:33:51 LoggerCall,line: 19     INFO | End

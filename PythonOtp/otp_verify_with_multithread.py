@@ -40,9 +40,6 @@ class otp_verify_with_multithread(object):
     '''
 
     def generate(self, *args, **kwargs):
-        '''
-        ..codeauthor:: Anil Kumar Reddy
-        '''
         totp_key = kwargs.get('obj')
         Current_otp = totp_key.now()
         print("Current OTP:", Current_otp)
@@ -60,9 +57,6 @@ class otp_verify_with_multithread(object):
     '''
 
     def countdown(self, *args, **kwargs):
-        '''
-        ..codeauthor:: Anil Kumar Reddy
-        '''
         global timeout
         try:
             print('After {} seconds OTP will expired...'.format(timeout))
@@ -101,9 +95,6 @@ class otp_verify_with_multithread(object):
     '''
 
     def verify_otp(self, *args, **kwargs):
-        '''
-        ..codeauthor:: Anil Kumar Reddy
-        '''
         totp_key = kwargs.get('obj')
 
         def readInput(caption, default, timeout=5):

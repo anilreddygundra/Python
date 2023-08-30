@@ -16,7 +16,7 @@ class_1_obj = module_from_file('anil',
                                'C:\\Users\\Anil Kumar G-2780\\PycharmProjects\\Anil\\Robotframework_Practice\\test\\listeners.py')
 
 if __name__ == '__main__':
-    class_1_obj.muthu()
+    class_1_obj.anil()
 
 # method - 2
 

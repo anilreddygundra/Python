@@ -6,7 +6,7 @@ import sys
 import os
 
 
-class QuizAppMuthu(object):
+class QuizAppAnil(object):
     def __init__(self, *args, **kwargs):
         self.user_default_play_count = 5
         self.append_list = []
@@ -43,7 +43,7 @@ class QuizAppMuthu(object):
             if self.default_question:
                 # dict overridden
                 # new = { 10: {'qus': 'my name is',
-                #                      'ans': ['muthu', 'kumar', 'msd', 'raina']},}
+                #                      'ans': ['anil', 'kumar', 'msd', 'raina']},}
                 self.all_question = self.update_dict(self.json_question_file_directory, old_dict=self.default_question)
                 print(self.all_question)
         else:
@@ -55,7 +55,7 @@ class QuizAppMuthu(object):
         if os.path.exists(self.json_answer_file_directory):
             if self.default_question:
                 # dict overridden
-                # new = { 10: 'muthu'}
+                # new = { 10: 'anil'}
                 self.all_correct_answer = self.update_dict(self.json_answer_file_directory,
                                                            old_dict=self.default_ans_mapping_sheet)
                 print(self.all_correct_answer)
@@ -414,7 +414,7 @@ if __name__ == '__main__':
     if not re.match(r'yes|y', get_start_game, flags=re.I):
         print("You should give Yes or y option on inline argument(argparser)")
     else:
-        obj = QuizAppMuthu()
+        obj = QuizAppAnil()
         count_in_main_func = 1
         while True:
             if count_in_main_func > 3:
@@ -459,3 +459,5 @@ if __name__ == '__main__':
                 if ret or not ret:
                     break
             count_in_main_func += 1
+
+        2242215049003

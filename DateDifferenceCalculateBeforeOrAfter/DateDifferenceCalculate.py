@@ -2,9 +2,6 @@ from datetime import datetime, date, timedelta
 from dateutil.relativedelta import *
 import re
 
-__version__ = "2019.12.01.01"
-__author__ = "Anil Kumar Reddy"
-
 
 class DateDifferenceCalculate(object):
     def __init__(self):
@@ -14,7 +11,7 @@ class DateDifferenceCalculate(object):
     def date_compatibility_fucn(exact_date_and_month=None, before_month_count=None, before_days_count=None,
                                 increment_type=None):
         '''
-        ..codeauthor:: Muthukumar Subramanian
+        ..codeauthor:: Anil Kumar Reddy
         :param exact_date_and_month: pass YES|Yes|yes or NO|No|no if you need exact date and month difference
         :param before_month_count: default month count is <type int> '1'
         :param before_days_count: default day count is <type int> '30'

@@ -1,7 +1,3 @@
-
-__version__ = "2019.11.08.01"
-__author__ = "Anil Kumar Reddy"
-
 # Add "__" (double underscore ) in front of the variable and function name can hide them
 # when accessing them from out of class.
 
@@ -10,7 +6,7 @@ __author__ = "Anil Kumar Reddy"
 
 class Person():
     def __init__(self):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
               Required argument(s):
@@ -18,7 +14,7 @@ class Person():
               Optional argument(s):
                   None
         :return: None
-        '''
+        """
         self.name = 'Anil'
         self.__lastname = 'Reddy'
 
@@ -33,14 +29,14 @@ print("Call 'PrintName' method: {}".format(cls_obj.PrintName()))
 # Will throw below exception
 # AttributeError: 'Person' object has no attribute '__lastname'
 # solution for private variable access
-# we able to print "Kumar" in __lastname
+# we are able to print "Kumar" in __lastname
 print("Fixed private variable access: {}".format(cls_obj._Person__lastname))
 
 
 # Example-2
 class SeeMee:
     def youcanseeme(self):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
               Required argument(s):
@@ -48,11 +44,11 @@ class SeeMee:
               Optional argument(s):
                   None
         :return: Hardcoded string
-        '''
+        """
         return 'From public method: you can see me'
 
     def __youcannotseeme(self):
-        '''
+        """
         ..codeauthor:: Anil Kumar Reddy
         Usage:
               Required argument(s):
@@ -60,7 +56,7 @@ class SeeMee:
               Optional argument(s):
                   None
         :return: Hardcoded string
-        '''
+        """
         return 'From privte method: you cannot see me'
 
 

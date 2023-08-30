@@ -6,7 +6,7 @@ from LoggerLib import LoggerLib
 
 
 # Calling **LoggerLib** function
-file_name = 'muthu'
+file_name = 'anil'
 lib_obj = LoggerLib()
 log_obj = lib_obj.Logger(file_name)
 log_obj.info("I am from loggercall class".format())

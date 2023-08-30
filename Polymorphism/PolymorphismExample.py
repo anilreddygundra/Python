@@ -1,7 +1,3 @@
-
-__version__ = "2019.11.11.01"
-__author__ = "Anil Kumar Reddy"
-
 # Example-1
 # Examples of used defined polymorphic functions
 
@@ -19,9 +15,6 @@ print("Example-1 - Call 'add' function with 3rd value: {}".format(add(2, 3, 4)))
 
 
 class India(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -37,9 +30,6 @@ class India(object):
 
 
 class USA(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -66,9 +56,6 @@ for country in (obj_ind, obj_usa):
 
 
 class Bird(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -81,9 +68,6 @@ class Bird(object):
 
 
 class Sparrow(Bird):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -93,9 +77,6 @@ class Sparrow(Bird):
 
 
 class Ostrich(Bird):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -122,9 +103,6 @@ obj_ost.flight()
 
 
 class India(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
@@ -140,9 +118,6 @@ class India(object):
 
 
 class USA(object):
-    '''
-    ..codeauthor:: Anil Kumar Reddy
-    '''
 
     def __init__(self):
         pass
