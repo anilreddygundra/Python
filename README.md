@@ -1,7 +1,7 @@
 # Python
 
 ## Covered topics:
-\* Import(import two class and importlib util)
+* Import(import two class and importlib util)
 * Logger (filehandling)
 * Random function
 * Decorator
@@ -12,10 +12,10 @@
 * Abstraction
 * Encapsulation
 * Polymorphism(Overriding)
-* defined polymorphic functions
-* Polymorphism with class methods
-* Polymorphism with Inheritance
-* Polymorphism with a Function and objects
+  * defined polymorphic functions
+  * Polymorphism with class methods
+  * Polymorphism with Inheritance
+  * Polymorphism with a Function and objects
 * Inheritance
 * ExcelSheetWrite
 * DateDifferenceCalculateBeforeOrAfter

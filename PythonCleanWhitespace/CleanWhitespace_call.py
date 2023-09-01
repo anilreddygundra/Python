@@ -1,6 +1,9 @@
 from CleanWhitespace import CleanWhitespace
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29
 input_dict = {' E123      yuyu': ' QWEerer', ' Qwerty   22': ' 89RThhjj ',
               'DDf     ': {' AnIlReDdY      fdf ': 'asdfgFG2 '}}
 obj = CleanWhitespace()

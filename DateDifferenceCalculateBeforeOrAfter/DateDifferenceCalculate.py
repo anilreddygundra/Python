@@ -11,7 +11,11 @@ class DateDifferenceCalculate(object):
     def date_compatibility_fucn(exact_date_and_month=None, before_month_count=None, before_days_count=None,
                                 increment_type=None):
         '''
+<<<<<<< HEAD
         ..codeauthor:: Anil Kumar Reddy
+=======
+        ..codeauthor:: Anil Reddy
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29
         :param exact_date_and_month: pass YES|Yes|yes or NO|No|no if you need exact date and month difference
         :param before_month_count: default month count is <type int> '1'
         :param before_days_count: default day count is <type int> '30'

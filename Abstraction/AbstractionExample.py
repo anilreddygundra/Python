@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import abc  # for Python less than 3.11
+=======
+# import abc   
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29
 from abc import ABC, abstractmethod
 
 
@@ -93,5 +97,10 @@ class ExecuteScript(MyOwnAbstractClass):
 cls_obj = ExecuteScript("Anil", "Reddy")
 ret = cls_obj.template_common_method()
 print('RET: {}'.format(ret))
+<<<<<<< HEAD
 ret_2 = cls_obj.anil()
 print('RET_2: {}'.format(ret_2))
+=======
+ret_2 = cls_obj.Anil()
+print('RET_2: {}'.format(ret_2))
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29

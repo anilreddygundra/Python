@@ -45,7 +45,11 @@ class CleanWhitespace(object):
              Example 2: (dict values spaces remove)
                 Dict input:
                     abc = {' E123      yuyu' : ' QWEerer' , ' Qwerty   22' : ' 89RThhjj ',
+<<<<<<< HEAD
                          'DDf     ' : { 'Anil      fdf ' : 'asdfgFG2 '}}
+=======
+                         'DDf     ' : { ' Anil      fdf ' : 'asdfgFG2 '}}
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29
                 ret = clean_whitespace(abc, value_strip='lead_and_trail')
                 Return output:
                     ret = {   ' E123      yuyu': 'QWEerer',

@@ -146,9 +146,9 @@ if __name__ == '__main__':
                    ['id_3', 'Reddy', '3', 'http://c'],
                    ['id_4', 'Deepak', '4', 'http://d'])
     # list and tuple
-    tuple_data2 = [('id_5', 'Eshaan', '5', 'http://e'),
-                   ('id_6', 'Franklin', '6', 'http://f'),
-                   ('id_7', 'Gajendra', '7', 'http://g')
+    tuple_data2 = [('id_5', 'Reddy', '5', 'http://e'),
+                   ('id_6', 'Kumar', '6', 'http://f'),
+                   ('id_7', 'Anil', '7', 'http://g')
                    ]
     # tuple and tuple
     tuple_data3 = (('id_8', 'Hari', '8', 'http://h'),
@@ -156,20 +156,20 @@ if __name__ == '__main__':
                    ('id_10', 'John', '10', 'http://j'),
                    ('id_11', 'Karan', '11', 'http://k'))
     # list and list
-    tuple_data4 = [['id_12', 'Lakhmipati', '12', 'http://l'],
-                   ['id_13', 'Muthu', '13', 'http://m'],
-                   ['id_14', 'Nakul', '14', 'http://n'],
-                   ['id_15', 'Oja', '15', 'http://o'],
-                   ['id_16', 'Praveen', '16', 'http://p']]
+    tuple_data4 = [['id_12', 'Manoj', '12', 'http://l'],
+                   ['id_13', 'Mathew', '13', 'http://m'],
+                   ['id_14', 'Chandan', '14', 'http://n'],
+                   ['id_15', 'Venkat', '15', 'http://o'],
+                   ['id_16', 'Nikhil', '16', 'http://p']]
     # tuple with single dimension
-    tuple_data5 = ('id_17', 'Raghav', '17', 'http://r',
+    tuple_data5 = ('id_17', 'Vikram', '17', 'http://r',
                    'id_18', 'Suriya', '18', 'http://s',
                    'id_19', 'Tamilan', '19', 'http://t',)
     # list with single dimension
-    tuple_data6 = ['id_20', 'Umesh', '20', 'http://u',
-                   'id_21', 'Vikram', '21', 'http://v',
-                   'id_22', 'Williamson', '22', 'http://w',
-                   'id_23', 'Xavier', '23', 'http://x']
+    tuple_data6 = ['id_20', 'Narendra', '20', 'http://u',
+                   'id_21', 'Prakash', '21', 'http://v',
+                   'id_22', 'Teja', '22', 'http://w',
+                   'id_23', 'Jaya', '23', 'http://x']
 
     # list with single dimension
     # Invalid single dimension list, here missed few column. Row and column value should be equal otherwise
@@ -187,7 +187,11 @@ if __name__ == '__main__':
                   'anil': {'action_1': tuple_data5, 'action_2': tuple_data6},
                   }
     header1_list = ['header_column_1', 'header_column_2', 'header_column_3', 'header_column_4']
+<<<<<<< HEAD
     header2_list = ['anil', 'reddy', 'kumar']
+=======
+    header2_list = ['Anil', 'Neela', 'Reddy']
+>>>>>>> 78e1c9fea98a1da94c2d2b6a3bb6e67550625a29
     header3_list = ['action_1', 'action_2']
 
     cls_obj = ExcelSheetWrite()
